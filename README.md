@@ -17,7 +17,7 @@ python tests_consistent_hasher.py
 python demo.py
 ```
 
-## Rebalance Plan (Manual, No Hooks)
+## Rebalance Plan
 
 The plan is implemented in `rebalance.py` and works in three steps:
 
