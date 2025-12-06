@@ -1,14 +1,12 @@
-# AI Consistent Hashing (xxhash) — Exercise 2 (No Hooks) + Rebalance Plan
+# AI Consistent Hashing (xxhash) — Exercise 2
 
-This repository contains a human-written implementation of a consistent hashing ring built on xxh3_64.
+This repository contains implementation of a consistent hashing ring built on xxh3_64.
 It includes virtual nodes, optional weights, replicas, and adapters for:
 
 - Distributed cache for model responses/embeddings
 - Vector DB / feature store sharding
 - Model artifact distribution (checkpoints/LoRA)
 
-**No lifecycle hooks** are used. A standalone `rebalance.py` module provides a **manual, controlled** rebalancing plan
-for adding/removing nodes, distributing keys/vectors/artifacts accordingly.
 
 ## Quick Start
 
