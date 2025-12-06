@@ -7,6 +7,16 @@ It includes virtual nodes, optional weights, replicas, and adapters for:
 - Vector DB / feature store sharding
 - Model artifact distribution (checkpoints/LoRA)
 
+## Project Goal
+We need a consistent hashing solution that can:
+
+Balance keys evenly across nodes (with virtual nodes and optional weights).
+Support elasticity: adding/removing nodes moves only a small fraction of keys.
+Provide O(log N) lookups with low constant overhead.
+Be simple enough to embed in different AI workloads:
+  1. Model response / embedding cache
+  2. Vector DB / feature store sharding
+  3. Artifact distribution (checkpoints / LoRA adapters)
 
 ## Quick Start
 
